@@ -1,5 +1,23 @@
 {
   "nodes": {
+    "cmake-mode": {
+      "flake": false,
+      "locked": {
+        "dir": "Auxiliary",
+        "lastModified": 1656734470,
+        "narHash": "sha256-P05twV4q/p3TLlBOwiyYwlgilionP9mb6XDbzl3fCvQ=",
+        "owner": "kitware",
+        "repo": "cmake",
+        "rev": "f1e38ec0a7208836c26c309693c90659e7d0baa7",
+        "type": "github"
+      },
+      "original": {
+        "dir": "Auxiliary",
+        "owner": "kitware",
+        "repo": "cmake",
+        "type": "github"
+      }
+    },
     "doom-emacs": {
       "flake": false,
       "locked": {
@@ -14,6 +32,22 @@
         "owner": "doomemacs",
         "ref": "master",
         "repo": "doomemacs",
+        "type": "github"
+      }
+    },
+    "doom-private": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1656848745,
+        "narHash": "sha256-s1P7+rZWOBdUwlVNaWvocfaz5a5azegAbEVc2P71eSg=",
+        "owner": "jjdosa",
+        "repo": "doom-private",
+        "rev": "d82e233c87f0d9803f5769ae1551445a873636fe",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jjdosa",
+        "repo": "doom-private",
         "type": "github"
       }
     },
@@ -34,13 +68,16 @@
       }
     },
     "emacs-overlay": {
-      "flake": false,
+      "inputs": {
+        "flake-utils": "flake-utils",
+        "nixpkgs": "nixpkgs"
+      },
       "locked": {
-        "lastModified": 1656667522,
-        "narHash": "sha256-20rsPIbX4pihuiBQ0pb/0WrdijUjiHSjgOz1UXhGf68=",
+        "lastModified": 1656787767,
+        "narHash": "sha256-uMMSFTMfdTNOFd0VImM+9LT9V8gFygJx2XbjvuqWKrY=",
         "owner": "nix-community",
         "repo": "emacs-overlay",
-        "rev": "46492f286aefae3a4993d3c65f182618f98956e9",
+        "rev": "bfa98bb7e829b62c915e0652fff75564170e3a22",
         "type": "github"
       },
       "original": {
@@ -97,6 +134,22 @@
         "type": "github"
       }
     },
+    "evil-plugins": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1428323590,
+        "narHash": "sha256-PI1FZaz6pJ47Rk76GYhlXab8IOgCSeOAM+Ya8rlWNg4=",
+        "owner": "tarao",
+        "repo": "evil-plugins",
+        "rev": "d9094d238756300ac4ca1050d6a71d302e120ca1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "tarao",
+        "repo": "evil-plugins",
+        "type": "github"
+      }
+    },
     "evil-quick-diff": {
       "flake": false,
       "locked": {
@@ -130,6 +183,21 @@
       }
     },
     "flake-utils": {
+      "locked": {
+        "lastModified": 1656065134,
+        "narHash": "sha256-oc6E6ByIw3oJaIyc67maaFcnjYOz1mMcOtHxbEf9NwQ=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "bee6a7250dd1b01844a2de7e02e4df7d8a0a206c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "flake-utils_2": {
       "locked": {
         "lastModified": 1656065134,
         "narHash": "sha256-oc6E6ByIw3oJaIyc67maaFcnjYOz1mMcOtHxbEf9NwQ=",
@@ -178,6 +246,19 @@
       }
     },
     "nixpkgs": {
+      "locked": {
+        "lastModified": 1645379616,
+        "narHash": "sha256-eLzR3MRS9hcNqSWZxP6BP7xiBjgC3/pB5n2Q0lLFe/g=",
+        "path": "/nix/store/k9sk9hg9apm8hvixa61fcfsn3fp2wiry-source",
+        "rev": "40ef692a55b188b1f5ae3967f3fc7808838c3f1d",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "nixpkgs_2": {
       "locked": {
         "lastModified": 1656490020,
         "narHash": "sha256-xonV1ITvAtwtoM58Iaz77mrkkj3NQKvP2QOPYZNiNvs=",
@@ -306,18 +387,21 @@
     },
     "root": {
       "inputs": {
+        "cmake-mode": "cmake-mode",
         "doom-emacs": "doom-emacs",
+        "doom-private": "doom-private",
         "doom-snippets": "doom-snippets",
         "emacs-overlay": "emacs-overlay",
         "emacs-so-long": "emacs-so-long",
         "evil-markdown": "evil-markdown",
         "evil-org-mode": "evil-org-mode",
+        "evil-plugins": "evil-plugins",
         "evil-quick-diff": "evil-quick-diff",
         "explain-pause-mode": "explain-pause-mode",
-        "flake-utils": "flake-utils",
+        "flake-utils": "flake-utils_2",
         "format-all": "format-all",
         "nix-straight": "nix-straight",
-        "nixpkgs": "nixpkgs",
+        "nixpkgs": "nixpkgs_2",
         "nose": "nose",
         "ob-racket": "ob-racket",
         "org": "org",
@@ -325,7 +409,8 @@
         "org-yt": "org-yt",
         "php-extras": "php-extras",
         "revealjs": "revealjs",
-        "rotate-text": "rotate-text"
+        "rotate-text": "rotate-text",
+        "ts-fold": "ts-fold"
       }
     },
     "rotate-text": {
@@ -341,6 +426,22 @@
       "original": {
         "owner": "debug-ito",
         "repo": "rotate-text.el",
+        "type": "github"
+      }
+    },
+    "ts-fold": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1655455885,
+        "narHash": "sha256-gwbyn1SzqII3doVyI5yEy6ASkBBPGBOZkCGou80+mig=",
+        "owner": "jcs-elpa",
+        "repo": "ts-fold",
+        "rev": "6cfe36ea2f04a44d113bbcada4348b596a307987",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jcs-elpa",
+        "repo": "ts-fold",
         "type": "github"
       }
     }

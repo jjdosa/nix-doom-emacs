@@ -41,7 +41,7 @@
     doom-snippets.url = "github:doomemacs/snippets";
     doom-snippets.flake = false;
     emacs-overlay.url = "github:nix-community/emacs-overlay";
-    emacs-overlay.flake = false;
+    # emacs-overlay.flake = false;
     emacs-so-long.url = "github:hlissner/emacs-so-long";
     emacs-so-long.flake = false;
     evil-markdown.url = "github:Somelauw/evil-markdown";
@@ -76,13 +76,27 @@
 
     nixpkgs.url = "nixpkgs/nixpkgs-unstable";
     flake-utils.url = "github:numtide/flake-utils";
+    doom-private.url = "github:jjdosa/doom-private";
+    doom-private.flake = false;
+    evil-plugins.url = "github:tarao/evil-plugins";
+    evil-plugins.flake = false;
+    cmake-mode.url = "github:kitware/cmake?dir=Auxiliary";
+    cmake-mode.flake = false;
+    ts-fold.url = "github:jcs-elpa/ts-fold";
+    ts-fold.flake = false;
+
   };
 
   outputs = { self, nixpkgs, flake-utils, ... }@inputs:
     let inherit (flake-utils.lib) eachDefaultSystem eachSystem;
     in eachDefaultSystem (system:
-      let pkgs = import nixpkgs { inherit system; };
+      let pkgs = import nixpkgs { inherit system; overlays = [ self.overlay ]; };
       in {
+        defaultPackage = pkgs.doom-emacs;
+        defaultApp = {
+          type = "app";
+          program = "${pkgs.doom-emacs}/bin/emacs";
+        };
         devShell = pkgs.mkShell {
           buildInputs =
             [ (pkgs.python3.withPackages (ps: with ps; [ PyGithub ])) ];
@@ -99,5 +113,9 @@
         };
       }) // {
         hmModule = import ./modules/home-manager.nix inputs;
+        overlay = nixpkgs.lib.composeManyExtensions [
+          inputs.emacs-overlay.overlay
+          (import ./overlay.nix inputs)
+        ];
       };
 }

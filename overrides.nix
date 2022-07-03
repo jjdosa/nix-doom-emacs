@@ -123,4 +123,22 @@ self: super: {
       ln -snf $out/share/emacs/site-lisp $out/share/emacs/site-lisp/editor-integration/emacs
     '';
   });
+
+  evil-plugins = self.straightBuild {
+    pname = "evil-plugins";
+  };
+
+  ts-fold = self.straightBuild {
+    pname = "ts-fold";
+  };
+
+  cmake-mode = self.straightBuild {
+    pname = "cmake-mode";
+    phases = [ "unpackPhase" "installPhase" ];
+    installPhase = ''
+      mkdir -p $out/share/emacs/site-lisp
+      cp Auxiliary/cmake-mode.el $out/share/emacs/site-lisp
+    '';
+  };
+
 }
