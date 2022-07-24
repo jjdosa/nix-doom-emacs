@@ -74,7 +74,8 @@
       "github:lassik/emacs-format-all-the-code/47d862d40a088ca089c92cd393c6dca4628f87d3";
     format-all.flake = false;
 
-    nixpkgs.url = "nixpkgs/nixpkgs-unstable";
+    haedosa.url = "github:haedosa/flakes/22.05";
+    nixpkgs.follows = "haedosa/nixpkgs";
     flake-utils.url = "github:numtide/flake-utils";
     doom-private.url = "github:jjdosa/doom-private";
     doom-private.flake = false;
