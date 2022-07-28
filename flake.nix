@@ -85,6 +85,8 @@
     cmake-mode.flake = false;
     ts-fold.url = "github:jcs-elpa/ts-fold";
     ts-fold.flake = false;
+    zoxide.url = "github:Vonfry/zoxide.el";
+    zoxide.flake = false;
 
   };
 

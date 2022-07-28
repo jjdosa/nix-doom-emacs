@@ -38,11 +38,11 @@
     "doom-private": {
       "flake": false,
       "locked": {
-        "lastModified": 1658740846,
-        "narHash": "sha256-4H/oNbEu9o6p42PAGCmxbwjPFPIWqJ2SJ9PN9wEC53M=",
+        "lastModified": 1658977068,
+        "narHash": "sha256-VIIlr3cqzsl+H33/LP3VnrMcXRTUB7mMQwhMQUBDPaM=",
         "owner": "jjdosa",
         "repo": "doom-private",
-        "rev": "730e7f080cfac1957c98f29372b1265cd0c2d3b7",
+        "rev": "3d777a50f37d19b1bfbc3008e396a83502d1caa4",
         "type": "github"
       },
       "original": {
@@ -474,7 +474,8 @@
         "php-extras": "php-extras",
         "revealjs": "revealjs",
         "rotate-text": "rotate-text",
-        "ts-fold": "ts-fold"
+        "ts-fold": "ts-fold",
+        "zoxide": "zoxide"
       }
     },
     "rotate-text": {
@@ -506,6 +507,22 @@
       "original": {
         "owner": "jcs-elpa",
         "repo": "ts-fold",
+        "type": "github"
+      }
+    },
+    "zoxide": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1657499605,
+        "narHash": "sha256-64HfWG5uT2eObGeFqr04VZzUjblzc5i6zeM8T5rsz7o=",
+        "owner": "Vonfry",
+        "repo": "zoxide.el",
+        "rev": "b09c06962316d28b14ecbb2340af7c0636ab6d16",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vonfry",
+        "repo": "zoxide.el",
         "type": "github"
       }
     }

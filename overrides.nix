@@ -132,6 +132,10 @@ self: super: {
     pname = "ts-fold";
   };
 
+  zoxide = self.straightBuild {
+    pname = "zoxide";
+  };
+
   cmake-mode = self.straightBuild {
     pname = "cmake-mode";
     phases = [ "unpackPhase" "installPhase" ];
