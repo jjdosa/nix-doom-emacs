@@ -95,8 +95,8 @@
     in eachDefaultSystem (system:
       let pkgs = import nixpkgs { inherit system; overlays = [ self.overlay ]; };
       in {
-        defaultPackage = pkgs.doom-emacs;
-        defaultApp = {
+        packages.default = pkgs.doom-emacs;
+        apps.default = {
           type = "app";
           program = "${pkgs.doom-emacs}/bin/emacs";
         };
