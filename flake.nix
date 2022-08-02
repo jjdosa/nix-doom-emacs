@@ -36,6 +36,14 @@
   description = "nix-doom-emacs home-manager module";
 
   inputs = {
+
+    haedosa.url = "github:haedosa/flakes/22.05";
+    nixpkgs.follows = "haedosa/nixpkgs";
+    flake-utils.url = "github:numtide/flake-utils";
+
+    doom-private.url = "github:jjdosa/doom-private";
+    doom-private.flake = false;
+
     doom-emacs.url = "github:doomemacs/doomemacs/master";
     doom-emacs.flake = false;
     doom-snippets.url = "github:doomemacs/snippets";
@@ -70,15 +78,8 @@
     revealjs.flake = false;
     rotate-text.url = "github:debug-ito/rotate-text.el";
     rotate-text.flake = false;
-    format-all.url =
-      "github:lassik/emacs-format-all-the-code/47d862d40a088ca089c92cd393c6dca4628f87d3";
+    format-all.url = "github:lassik/emacs-format-all-the-code/47d862d40a088ca089c92cd393c6dca4628f87d3";
     format-all.flake = false;
-
-    haedosa.url = "github:haedosa/flakes/22.05";
-    nixpkgs.follows = "haedosa/nixpkgs";
-    flake-utils.url = "github:numtide/flake-utils";
-    doom-private.url = "github:jjdosa/doom-private";
-    doom-private.flake = false;
     evil-plugins.url = "github:tarao/evil-plugins";
     evil-plugins.flake = false;
     cmake-mode.url = "github:kitware/cmake?dir=Auxiliary";
