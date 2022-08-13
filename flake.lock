@@ -38,11 +38,11 @@
     "doom-private": {
       "flake": false,
       "locked": {
-        "lastModified": 1660387302,
-        "narHash": "sha256-mhyiZdsJmxaNp0UnxUkg2QNJREUUMXEz2iQFwTqfYoc=",
+        "lastModified": 1660413194,
+        "narHash": "sha256-p7hVLzonmAbOVzhPTdDkolycQfGD2PInkVtnDeiz1Vo=",
         "owner": "jjdosa",
         "repo": "doom-private",
-        "rev": "e86cb9150b76c1970fbf9b4de840846e9f6318d9",
+        "rev": "6e7baf5eb8404483655b29a4d97f122c4b006123",
         "type": "github"
       },
       "original": {
