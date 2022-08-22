@@ -474,6 +474,7 @@
         "revealjs": "revealjs",
         "rotate-text": "rotate-text",
         "ts-fold": "ts-fold",
+        "vterm": "vterm",
         "zoxide": "zoxide"
       }
     },
@@ -506,6 +507,22 @@
       "original": {
         "owner": "jcs-elpa",
         "repo": "ts-fold",
+        "type": "github"
+      }
+    },
+    "vterm": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1661169531,
+        "narHash": "sha256-qYNUapEJz0SP62sHbg7OdIoG6wfjF7I4x6vEN3iQmN0=",
+        "owner": "akermu",
+        "repo": "emacs-libvterm",
+        "rev": "f104e3a11c9ff33ccc0e086cffaadc9549e9e8b1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "akermu",
+        "repo": "emacs-libvterm",
         "type": "github"
       }
     },

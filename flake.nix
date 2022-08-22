@@ -88,6 +88,8 @@
     ts-fold.flake = false;
     zoxide.url = "github:Vonfry/zoxide.el";
     zoxide.flake = false;
+    vterm.url = "github:akermu/emacs-libvterm";
+    vterm.flake = false;
 
   };
 

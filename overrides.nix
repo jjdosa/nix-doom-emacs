@@ -136,6 +136,8 @@ self: super: {
     pname = "zoxide";
   };
 
+  vterm = super.vterm.overrideAttrs (old: { src = lock "vterm"; });
+
   cmake-mode = self.straightBuild {
     pname = "cmake-mode";
     phases = [ "unpackPhase" "installPhase" ];
