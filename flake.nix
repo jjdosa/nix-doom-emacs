@@ -37,6 +37,8 @@
 
   inputs = {
     # TODO: change back to master once we get synced back with upstream changes
+    doom-private.url = "github:jjdosa/doom-private";
+    doom-private.flake = false;
     doom-emacs.url = "github:doomemacs/doomemacs/3853dff5e11655e858d0bfae64b70cb12ef685ac";
     doom-emacs.flake = false;
     doom-snippets.url = "github:doomemacs/snippets";
@@ -118,7 +120,7 @@
         packages = {
           default = self.outputs.packages.${system}.doom-emacs-example;
           doom-emacs-example = pkgs.callPackage self {
-            doomPrivateDir = ./test/doom.d;
+            doomPrivateDir = inputs.doom-private;
           };
         };
         checks = import ./checks.nix { inherit system; } inputs;

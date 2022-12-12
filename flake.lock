@@ -17,6 +17,22 @@
         "type": "github"
       }
     },
+    "doom-private": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1670864257,
+        "narHash": "sha256-ruoXdv4futkTF1gg44aBcsw5KqNp1+THfBmQ2kNn61A=",
+        "owner": "jjdosa",
+        "repo": "doom-private",
+        "rev": "aec8b33fd1eff755e7792d70c5b9cf0a997c888f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jjdosa",
+        "repo": "doom-private",
+        "type": "github"
+      }
+    },
     "doom-snippets": {
       "flake": false,
       "locked": {
@@ -339,6 +355,7 @@
     "root": {
       "inputs": {
         "doom-emacs": "doom-emacs",
+        "doom-private": "doom-private",
         "doom-snippets": "doom-snippets",
         "emacs-overlay": "emacs-overlay",
         "emacs-so-long": "emacs-so-long",
