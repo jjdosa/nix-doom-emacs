@@ -379,6 +379,7 @@
         "rotate-text": "rotate-text",
         "sln-mode": "sln-mode",
         "ts-fold": "ts-fold",
+        "vterm": "vterm",
         "ws-butler": "ws-butler"
       }
     },
@@ -427,6 +428,22 @@
       "original": {
         "owner": "jcs-elpa",
         "repo": "ts-fold",
+        "type": "github"
+      }
+    },
+    "vterm": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1668779692,
+        "narHash": "sha256-dNW3eXgFgah7eIug+MqXTl59HfSbM5HLKwHdp1CAmyo=",
+        "owner": "akermu",
+        "repo": "emacs-libvterm",
+        "rev": "f14d113ee4618f052879509ec378feb9766b871b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "akermu",
+        "repo": "emacs-libvterm",
         "type": "github"
       }
     },
