@@ -41,7 +41,7 @@
     doom-emacs.flake = false;
     doom-snippets.url = "github:doomemacs/snippets";
     doom-snippets.flake = false;
-    emacs-overlay.url = "github:nix-community/emacs-overlay";
+    emacs-overlay.url = "github:nix-community/emacs-overlay/c16be6de78ea878aedd0292aa5d4a1ee0a5da501";
     emacs-overlay.flake = false;
     emacs-so-long.url = "github:hlissner/emacs-so-long";
     emacs-so-long.flake = false;
