@@ -85,6 +85,10 @@
     vterm.flake = false;
     consult.url = "github:minad/consult";
     consult.flake = false;
+    org-ai.url = "github:rksm/org-ai";
+    org-ai.flake = false;
+    gptel.url = "github:karthink/gptel";
+    gptel.flake = false;
 
     nixpkgs.url = "nixpkgs/nixpkgs-unstable";
     flake-utils.url = "github:numtide/flake-utils";

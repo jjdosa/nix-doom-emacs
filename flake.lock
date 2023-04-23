@@ -213,6 +213,22 @@
         "type": "github"
       }
     },
+    "gptel": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1681365733,
+        "narHash": "sha256-JDFti8LmUzDwse68lhY1VrShVwSpDZ8Yw61fb2rquPo=",
+        "owner": "karthink",
+        "repo": "gptel",
+        "rev": "a5be53d5e3733ed48023e4862b59ac12fa98be07",
+        "type": "github"
+      },
+      "original": {
+        "owner": "karthink",
+        "repo": "gptel",
+        "type": "github"
+      }
+    },
     "nix-straight": {
       "flake": false,
       "locked": {
@@ -289,6 +305,22 @@
       "original": {
         "owner": "emacs-straight",
         "repo": "org-mode",
+        "type": "github"
+      }
+    },
+    "org-ai": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1681779893,
+        "narHash": "sha256-WJBrJoh/t+BVpg6K6p8Hi1SgbNWepPjoSnZxdz5wLxA=",
+        "owner": "rksm",
+        "repo": "org-ai",
+        "rev": "7b293279300278275779b6479f75a71a1d09e6cc",
+        "type": "github"
+      },
+      "original": {
+        "owner": "rksm",
+        "repo": "org-ai",
         "type": "github"
       }
     },
@@ -371,11 +403,13 @@
         "flake-compat": "flake-compat",
         "flake-utils": "flake-utils",
         "format-all": "format-all",
+        "gptel": "gptel",
         "nix-straight": "nix-straight",
         "nixpkgs": "nixpkgs",
         "nose": "nose",
         "ob-racket": "ob-racket",
         "org": "org",
+        "org-ai": "org-ai",
         "org-contrib": "org-contrib",
         "org-yt": "org-yt",
         "php-extras": "php-extras",
