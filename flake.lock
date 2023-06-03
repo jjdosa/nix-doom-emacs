@@ -1,5 +1,22 @@
 {
   "nodes": {
+    "consult": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1670046353,
+        "narHash": "sha256-n7bka1tB8k4LEjApAOJNme7T0XIEP8ZqThVJGEIJk4c=",
+        "owner": "minad",
+        "repo": "consult",
+        "rev": "c3608b1f634aebf8770ecb1d933a1ae9c34ecdf8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "minad",
+        "repo": "consult",
+        "rev": "c3608b1f634aebf8770ecb1d933a1ae9c34ecdf8",
+        "type": "github"
+      }
+    },
     "doom-emacs": {
       "flake": false,
       "locked": {
@@ -209,6 +226,22 @@
         "type": "github"
       }
     },
+    "gptel": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1685589853,
+        "narHash": "sha256-C9EZoKtvGmaDPZ3CUf/nJNmUEqzLhW5OaqGL+OHSMD4=",
+        "owner": "karthink",
+        "repo": "gptel",
+        "rev": "e6a1468bd25633bf440075256e39b002886774ef",
+        "type": "github"
+      },
+      "original": {
+        "owner": "karthink",
+        "repo": "gptel",
+        "type": "github"
+      }
+    },
     "nix-straight": {
       "flake": false,
       "locked": {
@@ -288,6 +321,22 @@
         "type": "github"
       }
     },
+    "org-ai": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1685455381,
+        "narHash": "sha256-vjggDJ4pb2AM3GTeAfaPsMSSaTne45zv+Y8+Y6JHDWg=",
+        "owner": "rksm",
+        "repo": "org-ai",
+        "rev": "dd1007706629ada4c61da6ec22846e722500e516",
+        "type": "github"
+      },
+      "original": {
+        "owner": "rksm",
+        "repo": "org-ai",
+        "type": "github"
+      }
+    },
     "org-contrib": {
       "flake": false,
       "locked": {
@@ -354,6 +403,7 @@
     },
     "root": {
       "inputs": {
+        "consult": "consult",
         "doom-emacs": "doom-emacs",
         "doom-private": "doom-private",
         "doom-snippets": "doom-snippets",
@@ -367,11 +417,13 @@
         "flake-compat": "flake-compat",
         "flake-utils": "flake-utils",
         "format-all": "format-all",
+        "gptel": "gptel",
         "nix-straight": "nix-straight",
         "nixpkgs": "nixpkgs",
         "nose": "nose",
         "ob-racket": "ob-racket",
         "org": "org",
+        "org-ai": "org-ai",
         "org-contrib": "org-contrib",
         "org-yt": "org-yt",
         "php-extras": "php-extras",
