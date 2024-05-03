@@ -217,11 +217,11 @@
     "gptel": {
       "flake": false,
       "locked": {
-        "lastModified": 1681365733,
-        "narHash": "sha256-JDFti8LmUzDwse68lhY1VrShVwSpDZ8Yw61fb2rquPo=",
+        "lastModified": 1714695070,
+        "narHash": "sha256-hP+qmX59rj8n5DvAPaRJXHWw0bgpRtBg6D69FaCKYOY=",
         "owner": "karthink",
         "repo": "gptel",
-        "rev": "a5be53d5e3733ed48023e4862b59ac12fa98be07",
+        "rev": "533724042e3054767c1402a070c9bdea973efd40",
         "type": "github"
       },
       "original": {
