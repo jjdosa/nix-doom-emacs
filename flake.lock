@@ -312,11 +312,11 @@
     "org-ai": {
       "flake": false,
       "locked": {
-        "lastModified": 1681779893,
-        "narHash": "sha256-WJBrJoh/t+BVpg6K6p8Hi1SgbNWepPjoSnZxdz5wLxA=",
+        "lastModified": 1728956917,
+        "narHash": "sha256-cjxhCmxaLUhCB3USq0HTeokGw9xvJhNnczX1SP/+gkk=",
         "owner": "rksm",
         "repo": "org-ai",
-        "rev": "7b293279300278275779b6479f75a71a1d09e6cc",
+        "rev": "3965dfd94a055133b3268c5beced36ff6b6615ab",
         "type": "github"
       },
       "original": {
