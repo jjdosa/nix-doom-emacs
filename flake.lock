@@ -488,11 +488,11 @@
     "vterm": {
       "flake": false,
       "locked": {
-        "lastModified": 1668779692,
-        "narHash": "sha256-dNW3eXgFgah7eIug+MqXTl59HfSbM5HLKwHdp1CAmyo=",
+        "lastModified": 1775439296,
+        "narHash": "sha256-ZSkGvKPhX4yZ2HNeNuHI7a01kjzBNBTdsWTj7y/xi8s=",
         "owner": "akermu",
         "repo": "emacs-libvterm",
-        "rev": "f14d113ee4618f052879509ec378feb9766b871b",
+        "rev": "54c29d14bca05bdd8ae60cda01715d727831e3f9",
         "type": "github"
       },
       "original": {
