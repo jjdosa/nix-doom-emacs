@@ -328,11 +328,11 @@
     "org-contrib": {
       "flake": false,
       "locked": {
-        "lastModified": 1675694242,
-        "narHash": "sha256-4Fn33CTVTCqh5TyVAggSr8Fm8/hB8Xgl+hkxh3WCrI8=",
+        "lastModified": 1777965877,
+        "narHash": "sha256-rPCLcS1ozTT77NeRFpo5FGdOVlBpGHnVYa8093bAbq4=",
         "owner": "emacsmirror",
         "repo": "org-contrib",
-        "rev": "fff6c888065588527b1c1d7dd7e41c29ef767e17",
+        "rev": "82f94c5612c20286d234613f0ce0d92eac2c0845",
         "type": "github"
       },
       "original": {
